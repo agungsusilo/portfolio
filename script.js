@@ -54,7 +54,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(
-  '.skill-card, .project-card, .timeline-item, .contact-card, .about-grid'
+  '.skill-card, .project-card, .timeline-item, .contact-card, .about-grid, .edu-card'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);

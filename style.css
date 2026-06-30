@@ -549,6 +549,62 @@ section:not(#hero) { padding: 100px 0; }
   color: var(--accent);
 }
 
+/* ===== EDUCATION & CERTIFICATIONS ===== */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.edu-col-title {
+  font-size: 1rem;
+  font-family: var(--mono);
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.edu-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: border-color var(--transition);
+}
+.edu-card:hover { border-color: var(--accent); }
+.edu-card:last-child { margin-bottom: 0; }
+
+.edu-icon { font-size: 1.5rem; flex-shrink: 0; }
+
+.edu-info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.edu-degree {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.edu-date {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent-2);
+}
+
+@media (max-width: 700px) {
+  .edu-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
 /* ===== CONTACT ===== */
 .contact-subtitle {
   text-align: center;

@@ -514,7 +514,24 @@ section:not(#hero) { padding: 100px 0; }
 .timeline-company {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
   margin-bottom: 16px;
+}
+
+.company-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  flex-shrink: 0;
 }
 
 .timeline-content ul {
